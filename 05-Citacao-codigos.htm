@@ -9,29 +9,79 @@
 <body>
     <h1>Outras formatações.</h1>
     <h2>Codigo fonte. O codigo "pre" é de pre-formatação que serve para a quebra de linha shift+tab faz com que puxamos os negocio pro lado, tu sabe.</h2>
-    <p>O comando <code>"document.getElementById"('teste')</code> é escrito em linguagem javascript. O "Code" serve para deixar tudo com mesmo espaço, agora vamos ver um comando em python.</p>
+        <p>O comando <code>"document.getElementById"('teste')</code> é escrito em linguagem javascript. O "Code" serve para deixar tudo com mesmo espaço, agora vamos ver um comando em python.</p>
     <pre>
-    <code> 
+<code> 
 num = int(input('Digite um numero'))
 if num % 2 == 0;
     print(f'O número {num} é PAR')
 else:
     print(f'O número {num} é IMPAR')
 print('Fim do programa')      
-    </code>
+</code>
     </pre> 
-   <h2>Citações</h2>
-   <p>Como diria o pai do ricado: <q> o computador é um burro muito rapido.</q> O codigo "q" serve para por aspas, use para citações, pois foca na semantica do codigo.</p> 
-   <h2>Citações completas. Presta atenção.</h2>
-   <p>Segundo Jeff Nobel, no seu livro html para leigos: "use o codigo 'blockquote' para fazer a sitação como iremos fazer abaixo.</p>
+    <h2>Citações</h2>
+        <p>Como diria o pai do ricado: <q> o computador é um burro muito rapido.</q> O codigo "q" serve para por aspas, use para citações, pois foca na semantica do codigo.</p> 
+    <h2>Citações completas. Presta atenção.</h2>
+        <p>Segundo Jeff Nobel, no seu livro html para leigos: "use o codigo 'blockquote' para fazer a sitação como iremos fazer abaixo.</p>
    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?hl=pt-BR&id=E8ZtDwAAQBAJ&redir_esc=y">
     A diferença entre elementos inline e um bloco de texto importante. Os elementos html neste capitulo descrevem os blocos de texto.
    </blockquote>
    <h2>Abreviações.</h2>
-   <p>Estou estudando <abbr title="HyperText Markup League">HTML</abbr>e <abbr title="Casscading Style 3">CSS3</abbr></p>
+        <p>Estou estudando <abbr title="HyperText Markup League">HTML</abbr>e <abbr title="Casscading Style 3">CSS3</abbr></p>
    <h2>Texto invertido.</h2>
-   <p><bdo dir="rtl">Estou aprendendo a criar coisas em html.</bdo>(Invertido.).</p>
-   <p><bdo dir="ltr">O carro bateu na parede.(normal</bdo></p>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em html.</bdo>(Invertido.).</p>
+        <p><bdo dir="ltr">O carro bateu na parede.(normal</bdo></p>
+    <h1>Vamos fazer listas "ul e ol"</h1>
+    <h2>Listas ordenadas.</h2>
+    <ol type="I" start="1">
+        <p>pode botar I, A, ou 1 para definir o type de lista e o start é onde começa a contar, vc sabe o msm serve para o de baixo.</p>
+        <li>acordar</li>
+        <li>escovar dentes</li>
+        <li>tomar banho</li>
+        <li>almoçar</li>
+        <li>arrumar o quarto</li>
+
+    </ol>
+    <h2>Vamos ver as não ordenadas.</h2>
+    <ul type="circle">
+        <p>pode botar circle, disc, square para modificar.</p>
+        <li>estudos</li>
+        <li>emprego</li>
+        <li>carro</li>
+        <li>casa</li>
+        <li>casar</li>
+        <li>viagens</li>
+        <li>festas</li>
+        <li>filhos</li>
+    </ul>
+    <h2>Juntando listas</h2>
+    <ol>
+        <li>antigas</li>
+            <ol type="a" type="1">
+                <li>cliper</li>
+                <li>visual basic</li>
+                <li>fortran</li>
+                <li>delphi</li>
+            </ol>
+        <li>novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>javascript</li>
+            <li>kotlin</li>
+        </ol>
+    </ol>
+    <h2>Lista de definição "dt" e "dd".</h2>
+    <dl>
+        <dt>html</dt>
+        <dd>linguagem de marcação para criação do conteudo de um site </dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para desing de um site</dd>
+        <dt>javascript</dt>
+        <dd>unica linguagem de programação para interatividade de um site.</dd>
+    </dl>
+
 
 </body>
 </html>
