@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas e Midias.</title>
+</head>
+<body>
+    <h1>Imagem dinamica.</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/Imagem-Pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Imagem-Media.png" type="image/png">
+        <img src="imagens/Imagem-Grande.png" alt="Imagem Flexivel">
+
+    </picture>
+    <p>N inverta o "source" pq da ruim, tem que ser da foto pequena para a grande.</p>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML 5</p>
+    
+    <audio src="Happy Mistake - RKVC.mp3" controls loop>       
+    </audio>
+    
+    <!-- Formatos de audios ( MP3, WVA e OGG ) se vc por auto no "preload" só vai reproduzir depois que carregar tudo e isso demora, ja o "metadata" só vai ter audio quando vc clicar. tente evitar aquivos WVA. Vai de MP3. Cuidado com direitos autorais. Use o https://www.pexels.com/pt-br/ lá tem imagens e videos sem direitos autorais.-->
+    <audio preload="metadata">
+        <source src="Happy Mistake - RKVC.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Como colocar video, observe.</h1>
+    
+</body>
+</html>
