@@ -18,6 +18,12 @@ section{
 
 }
 
+div{
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+}
+
 footer{
     color: white;
     text-align: center;
