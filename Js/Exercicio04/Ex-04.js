@@ -4,8 +4,9 @@ function contar(){
     let passo = document.getElementById('txtp')
     let res = document.getElementById('res')
 
-    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ){
         window.alert('Erro')
+        res.innerHTML = 'Impossivel contar!'
     } 
     else{
         res.innerHTML = 'Contando:'
@@ -13,8 +14,18 @@ function contar(){
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        for (let c = i; c <= f; c += p){
-            res.innerHTML += `  ${c}`
+        if(i < f){
+            for (let c = i; c <= f; c += p){
+                res.innerHTML += `  ${c}`
+            }
+
         }
+        else{
+            for(let c = i ; c >= f; c-=p){
+                res.innerHTML += ` ${c}`
+            }
+        }
+        
     }
+    res.innerHTML += ` Fim.`
 }
