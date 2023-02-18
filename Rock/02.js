@@ -16,4 +16,3 @@ console.log(typeof estuda)
 console.log(estuda)
 console.log(`O ${nome} tem a idade de ${idade} anos, tirou a nota ${numero} e pesa ${Bigode}Kg.`)
 
-.
